@@ -7,15 +7,11 @@ extends: eslint:recommended
 parserOptions:
   ecmaVersion: 5
 rules:
-  indent:
+  no-unused-vars: off
+  valid-jsdoc:
     - error
-    - 4
-  linebreak-style:
-    - error
-    - unix
-  quotes:
-    - error
-    - single
-  semi:
-    - error
-    - never
+    - requireReturn: true
+      requireReturnType: false
+      requireParamType: false
+      requireParamDescription: false
+      requireReturnDescription: false
